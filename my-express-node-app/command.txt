@@ -1,0 +1,35 @@
+// 
+npm init
+//
+npm i express
+//
+node index.js
+//
+npm i nodemon --save-dev
+//
+npm run start-dev
+
+
+
+
+
+// Docker 
+docker build ./Dockerfile   OR   docker build .
+=>$ docker build -t express-node-app .
+
+
+//
+docker image ls
+
+docker run --name express-node-app-test -d -p 4000:4000 express-node-app
+docker rm express-node-app-test -f
+docker ps
+
+
+---------------------
+-+-+-+-+-+-+-+-+-+-+-
+
+docker exec -it express-node-app-test bash
+
+
+
